@@ -1,0 +1,6 @@
+初始化Git仓库，使用git init命令
+
+
+添加文件到Git仓库，分两步：
+git add <file>	反复多次使用，添加多个文件
+git commit -m <message>
