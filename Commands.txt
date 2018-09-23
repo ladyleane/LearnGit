@@ -44,3 +44,9 @@ cd 本地Repository
 每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
 
 
+克隆
+git clone git@github.com:id/repository.git
+还可以使用https地址 https://github.com/id/repository.git
+
+
+
