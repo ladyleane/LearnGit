@@ -105,9 +105,16 @@ git tag 查看所有标签
 git tag <tag-name> <commit-id>
 标签按字母顺序列出
 git show <tagname> 查看标签详细信息
-git tag -a <tag-name> -m "Description" <commit-id>
--a指定标签名，-m指定说明信息
+git tag -a <tag-name> -m "Description" <commit-id> -a指定标签名，-m指定说明信息
 标签总是和某个commit挂钩。如果这个commit既出现在master分支，又出现在dev分支，那么在这两个分支上都可以看到这个标签
+
+删除标签 git tag -d v0.1
+如果要推送某个标签到远程，使用命令git push origin <tagname>
+一次性推送全部尚未推送到远程的标签 git push origin --tags
+
+如果标签已经推送到远程，删除远程标签：
+先从本地删除 git tag -d <tag-name>
+再从远程删除 git push origin :refs/tags/<tag-name>
 
 
 
