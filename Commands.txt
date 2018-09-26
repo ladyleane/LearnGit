@@ -97,4 +97,19 @@ git stash apply stash@{0}
 从远程抓取分支，使用git pull，如果有冲突，要先处理冲突
 
 
+git rebase 整理成直线
+
+标签
+切换到需要打标签的分支，git tag <name>
+git tag 查看所有标签
+git tag <tag-name> <commit-id>
+标签按字母顺序列出
+git show <tagname> 查看标签详细信息
+git tag -a <tag-name> -m "Description" <commit-id>
+-a指定标签名，-m指定说明信息
+标签总是和某个commit挂钩。如果这个commit既出现在master分支，又出现在dev分支，那么在这两个分支上都可以看到这个标签
+
+
+
+
 
