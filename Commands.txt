@@ -39,7 +39,7 @@ ssh-keygen -t rsa -C "youremail@example.com"
 
 关联远程仓库
 cd 本地Repository
-#创建远程仓库path-repo-name
+#创建远程仓库pathrepo-name
 要关联一个远程库，使用 git remote add origin git@github.com:server-name/pathrepo-name.git
 关联后，使用命令git push -u origin master第一次推送master分支的所有内容
 #如果失败了可以用git remote rm origin 再重试
